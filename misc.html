@@ -1,61 +1,152 @@
-<html>
-<title>ThePTMCNerd.com</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Misc. Info - ThePTMCNerd.com</title>
 <style>
-h1 {
-color : #0000FF;
-font-size : 80px
-}
+/* Global styles matching index - Copy.html */
 body {
-background-color : #800080;
-} 
-button {
-background-color : #00FF00;
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #75E6DA, #c8f4ef);
+  color: #1a1a1a;
+  text-align: center;
+  padding-bottom: 60px;
 }
-table, th, td {
-  border:1px solid black;
+
+/* Headings */
+h1 {
+  color: #800080;
+  font-size: 4rem;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
-h2 { 
-  font-size : 60px
+
+h2 {
+  color: #00008B;
+  font-size: 2rem;
+  margin-bottom: 40px;
 }
-a {
-  font-size = 40px
+
+/* Layout Grid */
+.section-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+/* Card Styling */
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  width: 350px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  text-align: left;
+}
+
+.card h3 {
+  color: #800080;
+  border-bottom: 2px solid #75E6DA;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+/* Button Styling matching original green theme */
+.btn {
+  display: block;
+  background-color: #00FF00;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: 1px solid #00cc00;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background-color: #00e600;
+}
+
+/* Image styling */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+
+.ship-list {
+  text-align: left;
+  padding-left: 20px;
+  font-weight: bold;
 }
 </style>
-<h1>ThePTMCNerd.com</h1>
-<h1>Misc. Info</h1>
+</head>
+
 <body>
-<h2>Descent 1 OST Youtube</h2>
-<button><a href = "https://www.youtube.com/watch?v=-OUgq0KlUlk">Descent (1995) MIDI soundtrack OST on pro Roland synth</a></button>
-<h2>Descent 1 Playstation OST Youtube</h2>
-<button><a href = "https://www.youtube.com/watch?v=3SfK9xNXFr4">[PSX/1996] Descent (Full OST) [HQ]</a></button>
-<h2>Descent 2 OST Youtube</h2>
-<button><a href = "https://www.youtube.com/playlist?list=PLDB81FFC307A1F4DC">Descent 2 OST (AWE32)</a></button>
-<h2>Descent 2 AST Youtube</h2>
-<button><a href = "https://www.youtube.com/watch?v=_UGGojdnjSc">Descent 2 Soundtrack (Full)</a></button>
-<h2>Descent 3 OST Youtube</h2>
-<button><a href = "https://www.youtube.com/playlist?list=PL8541CBA740D35FB3">Descent 3 OST</a></button>
-<h2>Descent 1 Gameplay Youtube</h2>
-<button><a href = "https://www.youtube.com/watch?v=3uq9B4LYPfY">Descent [Full Playthrough]</a></button>
-<h2>Descent 2 Gameplay Youtube</h2>
-<button><a href = "https://www.youtube.com/watch?v=Ed_78HTkRbQ">Descent 2 [Full Playthrough]</a></button>
-<h2>Descent 3 Gameplay Youtube - No Commentary</h2>
-<button><a href = "https://www.youtube.com/playlist?list=PLiEu3n9ms7iTuCU23sjg0vkEDaZZjy0bw">Let's Play Descent 3 - No Commentary</a></button>
-<h2>Descent 3 Gameplay Youtube - With Commentary</h2>
-<button><a href = "https://www.youtube.com/playlist?list=PLiEu3n9ms7iTyJxIRVwGdc4JmwLXJ9Ld2">Let's Play Descent 3 - Commentary</a></button>
-<h2>Descent 1 Robots</h2>
-<button><a href = "http://insectoid.budwin.net/dos/descent/d1robots.html" >DESCENT: Robots</a></button>
-<h2>Descent 2 Robots</h2>
-<button><a href = "https://descentinterplay.fandom.com/wiki/Descent_2_Robots">Descent 2 Robots | Descent Wiki</a></button><br/>
-<h2>This image shows some of the robots from descent 1 & 2.</h2>
-<img src = "robots.jpg"/><br/>
-<h2>The Ships<br/>
-This is the pyro gx from descent 1 & 2.<br/>
-<img src = "pyrogx.jpeg" width = 400 height = 400/><br/>
-These are the descent 3 ships:<br/>
-1. Pyro GL<br/>
-2. Pheonix Interceptor<br/>
-3. Magnum-AHT storage ship<br/>
-4. Black Pyro<br/>
-<img src = "d3ships.jpg.svg" />
-</h2>
+
+<h1>ThePTMCNerd.com</h1>
+<h2>Misc. Info</h2>
+
+<div class="section-container">
+
+  <div class="card">
+    <h3>Soundtracks</h3>
+    <p><strong>Descent 1:</strong></p>
+    <a class="btn" href="https://www.youtube.com/watch?v=-OUgq0KlUlk">D1 MIDI (Roland Synth)</a>
+    <a class="btn" href="https://www.youtube.com/watch?v=3SfK9xNXFr4">D1 Playstation OST</a>
+    
+    <p><strong>Descent 2:</strong></p>
+    <a class="btn" href="https://www.youtube.com/playlist?list=PLDB81FFC307A1F4DC">D2 OST (AWE32)</a>
+    <a class="btn" href="https://www.youtube.com/watch?v=_UGGojdnjSc">D2 Soundtrack (Full)</a>
+    
+    <p><strong>Descent 3:</strong></p>
+    <a class="btn" href="https://www.youtube.com/playlist?list=PL8541CBA740D35FB3">Descent 3 OST</a>
+  </div>
+
+  <div class="card">
+    <h3>Gameplay Videos</h3>
+    <a class="btn" href="https://www.youtube.com/watch?v=3uq9B4LYPfY">D1 Full Playthrough</a>
+    <a class="btn" href="https://www.youtube.com/watch?v=Ed_78HTkRbQ">D2 Full Playthrough</a>
+    <a class="btn" href="https://www.youtube.com/playlist?list=PLiEu3n9ms7iTuCU23sjg0vkEDaZZjy0bw">D3 (No Commentary)</a>
+    <a class="btn" href="https://www.youtube.com/playlist?list=PLiEu3n9ms7iTyJxIRVwGdc4JmwLXJ9Ld2">D3 (With Commentary)</a>
+  </div>
+
+  <div class="card">
+    <h3>Robots</h3>
+    <a class="btn" href="http://insectoid.budwin.net/dos/descent/d1robots.html">Descent 1 Robots Guide</a>
+    <a class="btn" href="https://descentinterplay.fandom.com/wiki/Descent_2_Robots">Descent 2 Robots Wiki</a>
+    <p><em>Robots from Descent 1 & 2:</em></p>
+    <img src="robots.jpg" alt="Descent Robots" />
+  </div>
+
+  <div class="card">
+    <h3>The Ships</h3>
+    <p>The <strong>Pyro GX</strong> from Descent 1 & 2:</p>
+    <img src="pyrogx.jpeg" alt="Pyro GX" width="400" height="400" />
+    
+    <p>Descent 3 Ships:</p>
+    <ol class="ship-list">
+      <li>Pyro GL</li>
+      <li>Pheonix Interceptor</li>
+      <li>Magnum-AHT storage ship</li>
+      <li>Black Pyro</li>
+    </ol>
+    <img src="d3ships.jpg.svg" alt="Descent 3 Ships" />
+  </div>
+
+</div>
+
+<br>
+<a href="index - Copy.html" style="color: #800080; font-weight: bold;">Back to Home</a>
+
 </body>
+</html>
