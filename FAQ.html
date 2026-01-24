@@ -1,0 +1,241 @@
+<script>
+function visible(id) { 
+  document.getElementById(id).style.color = 'black';
+}
+function invisible(id){
+  document.getElementById(id).style.color = 'purple'
+}
+i1 = true
+i2 = true
+i3 = true
+i4 = true
+i5 = true
+i6 = true
+i7 = true
+i8 = true
+i9 = true
+i10 = true
+function s1() {
+  if (i1 == true){
+    visible("1")
+    i1 = false
+  }
+  else {
+    invisible("1")
+    i1 = true
+  }
+}
+
+function s2() {
+  if (i2 == true){
+    visible("2")
+    i2 = false
+  }
+  else {
+    invisible("2")
+    i2 = true
+  }
+}
+
+function s3() {
+  if (i3 == true){
+    visible("3")
+    i3 = false
+  }
+  else {
+    invisible("3")
+    i3 = true
+  }
+}
+
+function s4() {
+  if (i4 == true){
+    visible("4")
+    i4 = false
+  }
+  else {
+    invisible("4")
+    i4 = true
+  }
+}
+function s5() {
+  if (i5 == true){
+    visible("5")
+    i5 = false
+  }
+  else {
+    invisible("5")
+    i5 = true
+  }
+}
+function s6() {
+  if (i6 == true){
+    visible("6")
+    i6 = false
+  }
+  else {
+    invisible("6")
+    i6 = true
+  }
+}
+function s7() {
+  if (i7 == true){
+    visible("7")
+    i7 = false
+  }
+  else {
+    invisible("7")
+    i7 = true
+  }
+}
+function s8() {
+  if (i8 == true){
+    visible("8")
+    i8 = false
+  }
+  else {
+    invisible("8")
+    i8 = true
+  }
+}
+function s9() {
+  if (i9 == true){
+    visible("9")
+    i9 = false
+  }
+  else {
+    invisible("9")
+    i9 = true
+  }
+}
+function s10() {
+  if (i10 == true){
+    visible("10")
+    i10 = false
+  }
+  else {
+    invisible("10")
+    i10 = true
+  }
+}
+</script>
+<html>
+<title>ThePTMCNerd.com</title>
+<style>
+h1 {
+color : #0000FF;
+font-size : 80px
+}
+h2 {
+color : 'gray'
+font-size : 30px
+}
+body {
+background-color : #800080;
+} 
+button {
+background-color : #00FF00;
+}
+table, th, td {
+  border:1px solid black;
+}
+.accordion {
+  background-color: #00FF00;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size : 50px;
+}
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+div {
+  font-size : 30px
+}
+strong {
+  color : #ff0000
+}
+.panel {
+  color : #800080
+}
+
+p {
+  font-size : 20px
+}
+
+</style>
+<h1>ThePTMCNerd.com</h1>
+<body>
+<h1>FAQ</h1>
+<button class = "accordion" onClick = "s1()">What is <em>Descent</em>?(Click to show text)</button>
+<div class = "panel" id = "1">
+<br/>
+<em>Descent</em> is a space shooter game originally released for MS-DOS(<em>Descent 1 </em>& <em> 2</em>), early windows systems like Windows 98 or Windows xp(<em>Descent 2 </em>& <em> 3</em>) and Playstation(<em>Descent</em>)The playstation version is called <em>Descent maximum</em>. Descent can now be emulated on modern computers using dxx-rebirth(dxxrebirth.com) or d2x-xl(descent2.de).
+<br/>
+</div>
+<button class = "accordion" onClick = "s2()">What are the <em>Descent</em> games?(Click to show text)</button>
+<div class = "panel" id = "2">
+<br/>
+There is <em>Descent 1</em>(1994), <em>Descent 2</em>(1996), and <em>Descent 3</em>(1999).
+Then there was expansions such as <em>Descent : Levels of the world,</em> <em>Descent 2 : The vertico seires</em>, <em>Descent 2 : The infinite abyss</em>, and <em>Descent 3 : Mercenary</em>.All these expansions came shortly after the game it was for was released.
+<br/>
+</div>
+<button class = "accordion" onclick = "s5()">What is the plot of the original <em>Descent</em> game?(Click to show text) <strong class = "red">Spoiler Alert!</strong></button>
+<div class = "panel" id = "5">
+<br/>
+<em>Descent</em> is a game about a mercenary who works for a company called the PTMC, which stands for post terran mining company.The robots that work in the mines get hacked by an alien virus, and the mercenary has to go though the mines is in his spaceship to destroy them.
+<br/>
+</div>
+<button class = "accordion" onClick = "s6()">What is the plot of <em>Descent 2</em>?(Click to show text) <strong class = "red">Spoiler Alert!</strong></button>
+<div class = "panel" id = 6>
+<br/>
+<em>Descent 2</em> is about when the mercenary realizes that the PTMC can put him on retainer for 72 hours.In other words he doesn't get his pay yet.Plus more work. Ain't that awesome?
+<br/>
+</div>
+<button class = "accordion" onClick = "s7()">What is the ending plot of <em>Descent 2</em>?(Click to show text) <strong>Spoiler Alert!</strong></button>
+<div class = "panel" id = "7">
+<br/>
+The ending of <em>Descent 2</em> is where Samuel Dravis, the mercenary's boss says he has to report his work and buisness before he gets his pay.But what happend is the warp drive in his ship glitches and radiation blasts him to the sun while the mercenary passes out and he can't signal for help...
+<br/>
+</div>
+<button class = "accordion" onClick = "s8()">What is the plot of <em>Descent 3</em>?(Click to show text) <strong class = "red">Spoiler Alert!</strong></button>
+<div class = "panel" id = "8">
+<br/>
+The mercenary is rescued by a ship working for the red acropalys research team, a company that does research.He learns that the virus was being illeagally modified and the malfunction on his ship was designed to happen so the mercenary couldn't find out too much of the secrets.The mercenary has to stop dravis but his ship is too wrecked and has to be thrown away in space.He gets a new ship, but his work isn't going to be easy.
+<br/>
+</div>
+<br/>
+</div>
+<button class = "accordion" onClick = "s9()">What is the ending plot of <em>Descent 3</em>?(Click to show text) <strong class = "red">Spoiler Alert!</strong></button>
+<div class = "panel" id = "9">
+<br/>
+The mercenary finally gets evidence against dravis and broadcasts the anti-virus program and gets into dravis's hideout and fights him and dravis ends up dying.
+<br/>
+</div>
+</div>
+<button class = "accordion" onClick = "s3()">Why <em>Descent</em>?Why not <em>Duke Nukem 3D?!</em>(Click to show text)</button>
+<div class = "panel" id = "3">
+<br/>
+Duke Nukem 3d as only 9 weapons.<em>Descent</em> 1 has 10 weapons, and <em>Descent 2 </em>& <em>3</em> both have 20+ weapons.<em>Duke Nukem 3D</em> has drug use and other adult content, which can make it very kid unfriendly.<em>Descent</em> has some violence, but it's very unrealistic and pixel-y and it's stuff like spaceships shooting lasers.
+<br/>
+</div>
+<button class = "accordion" onClick = "s4()">Yeah, but it's nothing compared <em>Doom</em>.(Click to show text)</button>
+<div class = "panel" id = "4">
+<br/>
+<em>Doom</em> has even less weapons, and still can be kid unfriendly sometimes.<br/>
+Hey! This is frequently asked quenstions, not frequently uttered statements. I'm calling the security ops for you tresspassing and smuggling words onto a html file. Oh, right I don't have them hired yet. Oops! I guess these words can stay here for now.
+<br/>
+</div>
+<button class = "accordion" onClick = "s10()">What else do I need to know?(Click to show text)</button>
+<div class = "panel" id = "10">
+<br/>
+Descent 3 has one bad(you now like bad bad, not minor) word which can be disabled in the settings.You can also buy the modern version of the game on steam or at gog.com.
+<br/>
+</div>
+</body>
+</html>
