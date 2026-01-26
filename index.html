@@ -39,7 +39,7 @@ h3 {
 .section-container {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 30px; /* Slightly reduced gap to fit 4 cards nicely */
   flex-wrap: wrap;
   padding: 0 40px 60px;
 }
@@ -49,7 +49,7 @@ h3 {
   background: white;
   border-radius: 20px;
   padding: 25px;
-  width: 320px;
+  width: 280px; /* Slightly narrower to accommodate the 4th card */
   box-shadow: 0 12px 30px rgba(0,0,0,0.15);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -103,6 +103,13 @@ footer {
   </div>
 
   <div class="card">
+    <h3>Ways to Play</h3>
+    <a href="play.html" target="_blank">
+      <img src="waystoplay.png" alt="Ways to Play">
+    </a>
+  </div>
+
+  <div class="card">
     <h3>Misc. Info</h3>
     <a href="misc.html" target="_blank">
       <img src="aibin.png" alt="Misc Info">
@@ -112,8 +119,8 @@ footer {
 </div>
 
 <footer>
-  Special thanks to hotpot.ai/art-generator for creating the “Question Marks” and
-  “Misc. Items Bin” images and providing editing tools.
+  Special thanks to hotpot.ai/art-generator for creating the “Question Marks”, 
+  “Misc. Items Bin”, and “Ways to Play” images and providing editing tools.
 </footer>
 
 </body>
