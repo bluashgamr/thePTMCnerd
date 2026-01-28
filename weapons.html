@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Weapons Guide - ThePTMCNerd.com</title>
 <style>
-/* Global styles matching index - Copy.html */
+/* Modern styles matching the rest of your site */
 body {
   margin: 0;
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
@@ -13,29 +13,16 @@ body {
   padding: 40px 20px;
 }
 
-h1 {
-  color: #800080;
-  font-size: 4rem;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
+h1 { color: #800080; font-size: 4rem; text-align: center; margin-top: 0; margin-bottom: 10px; }
+h2 { color: #00008B; font-size: 2rem; text-align: center; margin-bottom: 40px; }
 
-h2 {
-  color: #00008B;
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-/* Table Container */
 .table-container {
   background: white;
   border-radius: 20px;
   box-shadow: 0 12px 40px rgba(0,0,0,0.15);
-  overflow: visible; /* Changed to visible so the header can stick to the page */
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 table {
@@ -43,17 +30,17 @@ table {
   border-collapse: collapse;
 }
 
-/* STICKY HEADER CODE */
+/* STICKY HEADER: Labels stay at the top when you scroll */
 th {
   position: sticky;
-  top: 0; /* Stays at the very top of the browser window */
-  background-color: #00008B; /* Dark blue background */
+  top: 0;
+  background-color: #00008B;
   color: white;
   padding: 20px 15px;
   text-align: left;
   font-size: 1.1rem;
-  z-index: 100; /* Ensures it stays on top of the weapon images */
-  border-bottom: 4px solid #800080; /* Purple accent border */
+  z-index: 100;
+  border-bottom: 4px solid #800080;
 }
 
 td {
@@ -62,14 +49,14 @@ td {
   font-size: 1rem;
   line-height: 1.5;
   vertical-align: top;
+  /* THE FIX: These lines prevent words from splitting like "doo-r" */
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
-tr:hover {
-  background-color: #f8fdff;
-}
+tr:hover { background-color: #f8fdff; }
 
-/* Image styling */
-.weapon-img {
+img {
   border-radius: 8px;
   border: 1px solid #ccc;
   background: #fdfdfd;
@@ -89,7 +76,6 @@ tr:hover {
 </head>
 
 <body>
-
 <h1>ThePTMCNerd.com</h1>
 <h2>Weapons Guide</h2>
 
@@ -110,338 +96,296 @@ tr:hover {
       <tr>
         <td><strong>Laser</strong></td>
         <td>FREE. It is the startup weapon.</td>
-        <td>Doesn't do much damage (at first). However, the next time you get a laser, your laser levels up and has slightly better stats. Max level 4. Only one level in Descent 3.</td>
-        <td>
-          <img src="1.gif" class="weapon-img" width="140" height="80">
-          <img src="laser.webp" class="weapon-img" width="140" height="80">
-        </td>
+        <td>Doesn't do much damage (at first). Levels up to max 4. Only one level in Descent 3.</td>
+        <td><img src="1.gif" width="140" height="80"><img src="laser.webp" width="140" height="80"></td>
         <td>Descent 1, 2 & 3</td>
-        <td>Primary</td>
+        <td>Primary Weapon</td>
         <td>N/A</td>
       </tr>
       <tr>
         <td><strong>Super Laser</strong></td>
-        <td>Basically the normal laser with better stats. Boosts to level 5 or 6 in Descent 2. In Descent 3, Laser and Super Laser are separate.</td>
-        <td>Slightly more energy consumption than the normal laser.</td>
-        <td>
-          <img src="2.gif" class="weapon-img" width="140" height="80">
-          <img src="slaser.webp" class="weapon-img" width="140" height="80">
-        </td>
+        <td>Better stats. In D2, pick it up to reach levels 5 and 6. In D3, Laser and Super Laser are separate.</td>
+        <td>Slightly more energy consumption than normal laser.</td>
+        <td><img src="2.gif" width="140" height="80"><img src="slaser.webp" width="140" height="80"></td>
         <td>Descent 2 & 3</td>
-        <td>Primary</td>
+        <td>Primary Weapon</td>
         <td>N/A</td>
       </tr>
       <tr>
         <td><strong>Vulcan</strong></td>
-        <td>Fires shots rapidly. Does not use any energy.</td>
-        <td>Requires separate ammo. Does only a medium amount of damage.</td>
-        <td>
-          <img src="4.gif" class="weapon-img" width="140" height="80">
-          <img src="clip.gif" class="weapon-img">
-        </td>
+        <td>Fires rapidly. No energy use.</td>
+        <td>Requires separate ammo. Medium damage.</td>
+        <td><img src="4.gif" width="140" height="80"><img src="clip.gif"></td>
         <td>Descent 1 & 2</td>
-        <td>Primary</td>
+        <td>Primary Weapon</td>
         <td>20,000 rounds</td>
       </tr>
       <tr>
         <td><strong>Gauss</strong></td>
-        <td>Lots of damage per shot. Exploding bullets. No energy use.</td>
-        <td>Requires separate ammo (same as Vulcan). If you don't stand back, you take fairly high damage.</td>
-        <td>
-          <img src="5.gif" class="weapon-img" width="140" height="80">
-          <img src="clip.gif" class="weapon-img">
-        </td>
+        <td>High damage. Fires multiple shots. Exploding bullets. No energy use.</td>
+        <td>Requires vulcan ammo. Stand back to avoid self-damage.</td>
+        <td><img src="5.gif" width="140" height="80"><img src="clip.gif"></td>
         <td>Descent 2</td>
-        <td>Primary</td>
+        <td>Primary Weapon</td>
         <td>20,000 rounds</td>
       </tr>
       <tr>
         <td><strong>Vauss</strong></td>
-        <td>Vulcan combined with Gauss. Very rapid with good damage.</td>
-        <td>Uses its own type of ammo (Not Napalm or Mass Driver ammo).</td>
-        <td><img src="Vauss.webp" class="weapon-img" width="140" height="80"></td>
+        <td>Vulcan combined with Gauss. Rapid and high damage.</td>
+        <td>Uses its own type of ammo.</td>
+        <td><img src="Vauss.webp" width="140" height="80"></td>
         <td>Descent 3</td>
-        <td>Primary</td>
+        <td>Primary Weapon</td>
         <td>12k (Phoenix), 15k (Pyro), 20k (Magnum)</td>
       </tr>
       <tr>
         <td><strong>Mass Driver</strong></td>
-        <td>Fires heavy shots with high damage. Hold fire to scope.</td>
-        <td>Requires separate ammo (not vauss or napalm ammo).</td>
-        <td><img src="mdriver.webp" class="weapon-img" width="140" height="80"></td>
+        <td>Heavy shots with high damage. Hold fire to scope.</td>
+        <td>Requires separate ammo.</td>
+        <td><img src="mdriver.webp" width="140" height="80"></td>
         <td>Descent 3</td>
-        <td>Primary</td>
-        <td>25 rounds</td>
+        <td>Primary Weapon</td>
+        <td>Max 25 rounds</td>
       </tr>
       <tr>
         <td><strong>Napalm</strong></td>
-        <td>Fires streams of flame. Inflicts damage over time. Multiple streams based on ship.</td>
+        <td>Fires streams of flame. Inflicts damage over time.</td>
         <td>Requires separate napalm ammo.</td>
-        <td><img src="napalm.webp" class="weapon-img" width="140" height="80"></td>
+        <td><img src="napalm.webp" width="140" height="80"></td>
         <td>Descent 3</td>
-        <td>Primary</td>
+        <td>Primary Weapon</td>
         <td>120L (Phoenix), 150L (Pyro), 200L (Magnum)</td>
       </tr>
       <tr>
         <td><strong>Spreadfire</strong></td>
-        <td>A decent amount of damage. Shoots 3 vertical then 3 horizontal shots.</td>
+        <td>Decent damage. Alternates horizontal and vertical 3-shot lines.</td>
         <td>Moderate energy consumption.</td>
-        <td><img src="11.gif" class="weapon-img" width="140" height="80"></td>
+        <td><img src="11.gif" width="140" height="80"></td>
         <td>Descent 1 & 2</td>
-        <td>Primary</td>
+        <td>Primary Weapon</td>
         <td>N/A</td>
       </tr>
       <tr>
         <td><strong>Helix</strong></td>
-        <td>More impact area than spreadfire. Shoots 5 shots in rotating lines.</td>
+        <td>More area than spreadfire. 5-shot rotating lines.</td>
         <td>High energy consumption.</td>
-        <td><img src="6.gif" class="weapon-img" width="140" height="80"></td>
+        <td><img src="6.gif" width="140" height="80"></td>
         <td>Descent 2</td>
-        <td>Primary</td>
+        <td>Primary Weapon</td>
         <td>N/A</td>
       </tr>
       <tr>
         <td><strong>Microwave</strong></td>
-        <td>Stuns enemies until you stop shooting, holding them in place.</td>
-        <td>Not a lot of damage itself. Decent energy consumption.</td>
-        <td><img src="microwave.webp" class="weapon-img" width="140" height="80"></td>
+        <td>Stuns and holds enemies in place.</td>
+        <td>Low damage. Decent energy consumption.</td>
+        <td><img src="microwave.webp" width="140" height="80"></td>
         <td>Descent 3</td>
-        <td>Primary</td>
+        <td>Primary Weapon</td>
         <td>N/A</td>
       </tr>
       <tr>
         <td><strong>Plasma</strong></td>
-        <td>Shoots bits of plasma very rapidly.</td>
+        <td>Rapidly shoots bits of plasma.</td>
         <td>Consumes energy fairly fast.</td>
-        <td>
-          <img src="7.gif" class="weapon-img" width="140" height="80">
-          <img src="plasma.webp" class="weapon-img" width="140" height="80">
-        </td>
+        <td><img src="7.gif" width="140" height="80"><img src="plasma.webp" width="140" height="80"></td>
         <td>Descent 1, 2 & 3</td>
-        <td>Primary</td>
+        <td>Primary Weapon</td>
         <td>N/A</td>
       </tr>
       <tr>
         <td><strong>Phoenix</strong></td>
-        <td>Does a lot of damage. Ricochets off walls. Rapid like plasma.</td>
-        <td>You can easily kill yourself with it. Very high energy consumption.</td>
-        <td><img src="8.gif" class="weapon-img" width="140" height="80"></td>
+        <td>High damage. Ricochets off walls.</td>
+        <td>Easy to kill yourself. Very high energy consumption.</td>
+        <td><img src="8.gif" width="140" height="80"></td>
         <td>Descent 2</td>
-        <td>Primary</td>
+        <td>Primary Weapon</td>
         <td>N/A</td>
       </tr>
       <tr>
         <td><strong>EMD Gun</strong></td>
         <td>Rapidly shoots many homing shots.</td>
         <td>Very high energy consumption.</td>
-        <td><img src="emdgun.webp" class="weapon-img" width="140" height="80"></td>
+        <td><img src="emdgun.webp" width="140" height="80"></td>
         <td>Descent 3</td>
-        <td>Primary</td>
+        <td>Primary Weapon</td>
         <td>N/A</td>
       </tr>
       <tr>
         <td><strong>Fusion</strong></td>
-        <td>High damage. Can be charged for more damage.</td>
-        <td>High energy consumption and reload time. Overcharging damages your ship.</td>
-        <td>
-          <img src="9.gif" class="weapon-img" width="140" height="80">
-          <img src="fusion.webp" class="weapon-img" width="140" height="80">
-        </td>
+        <td>High damage. Can be charged for more power.</td>
+        <td>High energy use. High reload time. Overcharging damages your ship.</td>
+        <td><img src="9.gif" width="140" height="80"><img src="fusion.webp" width="140" height="80"></td>
         <td>Descent 1, 2 & 3</td>
-        <td>Primary</td>
+        <td>Primary Weapon</td>
         <td>N/A</td>
       </tr>
       <tr>
         <td><strong>Omega</strong></td>
-        <td>Homing abilities. Steals enemy shields. Improved version in Descent 3.</td>
-        <td>D2 version uses energy to recharge. D3 version uses energy extremely quickly.</td>
-        <td>
-          <img src="10.gif" class="weapon-img" width="140" height="80">
-          <img src="omega.webp" class="weapon-img" width="140" height="80">
-        </td>
+        <td>Homing abilities. Steals shields from targets.</td>
+        <td>D2 version damage is only OK and requires recharging. D3 version uses energy extremely fast.</td>
+        <td><img src="10.gif" width="140" height="80"><img src="omega.webp" width="140" height="80"></td>
         <td>Descent 2 & 3</td>
-        <td>Primary</td>
+        <td>Primary Weapon</td>
         <td>N/A</td>
       </tr>
 
       <tr>
         <td><strong>Concussion Missile</strong></td>
-        <td>Moderately high damage. Moves fast in Descent 3.</td>
+        <td>Moderately high damage.</td>
         <td>D1 & D2 versions move slowly.</td>
-        <td>
-          <img src="concmiss.gif" class="weapon-img" width="140" height="80">
-          <img src="concmiss4.gif" class="weapon-img" width="140" height="80">
-        </td>
+        <td><img src="concmiss.gif" width="140" height="80"></td>
         <td>Descent 1, 2 & 3</td>
-        <td>Secondary</td>
-        <td>20 (D1/D2). D3: 12 (Phoenix), 15 (Pyro), 20 (Magnum)</td>
+        <td>Secondary Weapon</td>
+        <td>20 (D1/D2). 12-20 (D3)</td>
       </tr>
       <tr>
         <td><strong>Frag Missile</strong></td>
-        <td>Explodes into pieces of shrapnel on impact.</td>
-        <td>Stand back so you don't get hurt!</td>
-        <td><img src="frag.jpg" class="weapon-img" width="140" height="80"></td>
+        <td>Explodes into high-damage shrapnel.</td>
+        <td>Use in large areas; stand back.</td>
+        <td><img src="frag.jpg" width="140" height="80"></td>
         <td>Descent 3</td>
-        <td>Secondary</td>
-        <td>12 (Phoenix), 15 (Pyro), 20 (Magnum)</td>
+        <td>Secondary Weapon</td>
+        <td>12-20 (D3)</td>
       </tr>
       <tr>
         <td><strong>Homing Missile</strong></td>
-        <td>Homing ability. Moves fast in Descent 3.</td>
-        <td>D1 & D2 versions move moderately slow.</td>
-        <td>
-          <img src="hmiss.gif" class="weapon-img" width="140" height="80">
-          <img src="hmiss4.gif" class="weapon-img" width="140" height="80">
-        </td>
+        <td>Homes on targets. Moderately high damage.</td>
+        <td>D1 & D2 versions move slow.</td>
+        <td><img src="hmiss.gif" width="140" height="80"></td>
         <td>Descent 1, 2 & 3</td>
-        <td>Secondary</td>
-        <td>10 (D1/D2). D3: 12 (Phoenix), 15 (Pyro), 20 (Magnum)</td>
+        <td>Secondary Weapon</td>
+        <td>10 (D1/D2). 12-20 (D3)</td>
       </tr>
       <tr>
         <td><strong>Napalm Rocket</strong></td>
         <td>Drops flaming napalm on impact.</td>
-        <td>Be careful not to burn yourself!</td>
-        <td><img src="nr.jpg" class="weapon-img" width="140" height="80"></td>
+        <td>Don't burn yourself.</td>
+        <td><img src="nr.jpg" width="140" height="80"></td>
         <td>Descent 3</td>
-        <td>Secondary</td>
-        <td>5 (Phoenix), 10 (Pyro), 15 (Magnum)</td>
+        <td>Secondary Weapon</td>
+        <td>5-15 (D3)</td>
       </tr>
       <tr>
         <td><strong>Impact Mortar</strong></td>
         <td>Big explosion and very high damage.</td>
-        <td>Slow reload and movement. Stand back to avoid accidents.</td>
-        <td><img src="im.jpg" class="weapon-img" width="140" height="80"></td>
+        <td>Slow reload and slow travel speed.</td>
+        <td><img src="im.jpg" width="140" height="80"></td>
         <td>Descent 3</td>
-        <td>Secondary</td>
-        <td>7 (Phoenix), 10 (Pyro), 15 (Magnum)</td>
+        <td>Secondary Weapon</td>
+        <td>7-15 (D3)</td>
       </tr>
       <tr>
         <td><strong>Smart Missile</strong></td>
-        <td>Creates explosion that blasts homing plasma bits.</td>
-        <td>Make sure to stand back when firing.</td>
-        <td><img src="sm.gif" class="weapon-img" width="140" height="80"></td>
+        <td>Explosion releases homing plasma bits.</td>
+        <td>Stand back to avoid plasma.</td>
+        <td><img src="sm.gif" width="140" height="80"></td>
         <td>Descent 1, 2 & 3</td>
-        <td>Secondary</td>
-        <td>5 max (D3: 3 Phoenix, 8 Magnum)</td>
+        <td>Secondary Weapon</td>
+        <td>3-8 (D3). 5 (D1/D2)</td>
       </tr>
       <tr>
         <td><strong>Mega Missile</strong></td>
-        <td>Homing missile with a large, extremely high damage explosion.</td>
-        <td>Stand far back to avoid major accidents.</td>
-        <td><img src="megamiss.gif" class="weapon-img" width="140" height="80"></td>
+        <td>Homes and creates massive explosion with extremely high damage.</td>
+        <td>Stand far back.</td>
+        <td><img src="megamiss.gif" width="140" height="80"></td>
         <td>Descent 1, 2 & 3</td>
-        <td>Secondary</td>
-        <td>5 (D1/D2). D3: 2 (Phoenix), 3 (Pyro), 5 (Magnum)</td>
+        <td>Secondary Weapon</td>
+        <td>2-5 (D3). 5 (D1/D2)</td>
       </tr>
       <tr>
         <td><strong>Flash Missile</strong></td>
-        <td>Blinding flash blinds enemies for a couple seconds.</td>
-        <td>Stand back so you don't get blinded as well.</td>
-        <td>
-          <img src="fm.gif" class="weapon-img" width="140" height="80">
-          <img src="fm4.gif" class="weapon-img" width="140" height="80">
-        </td>
+        <td>Blinds enemies for a couple of seconds.</td>
+        <td>Don't blind yourself.</td>
+        <td><img src="fm.gif" width="140" height="80"></td>
         <td>Descent 2</td>
-        <td>Secondary</td>
-        <td>20 missiles</td>
+        <td>Secondary Weapon</td>
+        <td>20</td>
       </tr>
       <tr>
         <td><strong>Guided Missile</strong></td>
-        <td>Can be manually steered after firing. Moderately high damage.</td>
+        <td>Can be steered manually.</td>
         <td>Cannot be guided for longer than 30 seconds.</td>
-        <td>
-          <img src="gm.gif" class="weapon-img" width="140" height="80">
-          <img src="gm4.gif" class="weapon-img" width="140" height="80">
-        </td>
+        <td><img src="gm.gif" width="140" height="80"></td>
         <td>Descent 2 & 3</td>
-        <td>Secondary</td>
-        <td>20 (Magnum/D1/D2), 10 (Phoenix), 15 (Pyro)</td>
+        <td>Secondary Weapon</td>
+        <td>10-20 (D3). 20 (D1/D2)</td>
       </tr>
       <tr>
         <td><strong>Cyclone Missile</strong></td>
-        <td>Blasts into 6 small homing missiles.</td>
+        <td>Splits into 6 small homing missiles.</td>
         <td>Don't fire at point blank range.</td>
-        <td><img src="cyclone.png" class="weapon-img" width="140" height="80"></td>
+        <td><img src="cyclone.png" width="140" height="80"></td>
         <td>Descent 3</td>
-        <td>Secondary</td>
-        <td>7 (Phoenix), 10 (Pyro), 15 (Magnum)</td>
+        <td>Secondary Weapon</td>
+        <td>7-15 (D3)</td>
       </tr>
       <tr>
         <td><strong>Mercury Missile</strong></td>
         <td>Moves very fast. High firing rate.</td>
-        <td>Only does as much damage as a concussion missile.</td>
-        <td>
-          <img src="mm.gif" class="weapon-img" width="140" height="80">
-          <img src="mm4.gif" class="weapon-img" width="140" height="80">
-        </td>
+        <td>Only concussion missile level damage.</td>
+        <td><img src="mm.gif" width="140" height="80"></td>
         <td>Descent 2</td>
-        <td>Secondary</td>
-        <td>20 missiles</td>
+        <td>Secondary Weapon</td>
+        <td>20</td>
       </tr>
       <tr>
-        <td><strong>Earthshaker</strong></td>
+        <td><strong>Earthshaker Missile</strong></td>
         <td>Many large explosions with extremely high damage.</td>
-        <td>Stand very far back to avoid killing yourself.</td>
-        <td><img src="sm.gif" class="weapon-img" width="140" height="80"></td>
+        <td>Stand very far back.</td>
+        <td><img src="sm.gif" width="140" height="80"></td>
         <td>Descent 2</td>
-        <td>Secondary</td>
-        <td>10 missiles</td>
+        <td>Secondary Weapon</td>
+        <td>10</td>
       </tr>
       <tr>
-        <td><strong>Black Shark</strong></td>
-        <td>Creates a mini black hole that sucks everything in before exploding.</td>
-        <td>Stand back or you're toast. Invulnerability recommended.</td>
-        <td><img src="bshark.jpg" class="weapon-img" width="140" height="80"></td>
+        <td><strong>Black Shark Missile</strong></td>
+        <td>Creates a mini black hole on impact.</td>
+        <td>Stand back or you're toast.</td>
+        <td><img src="bshark.jpg" width="140" height="80"></td>
         <td>Descent 3</td>
-        <td>Secondary</td>
-        <td>1 (Phoenix), 2 (Pyro), 3 (Magnum)</td>
+        <td>Secondary Weapon</td>
+        <td>1-3 (D3)</td>
       </tr>
 
       <tr>
         <td><strong>Proximity Bomb</strong></td>
-        <td>Deals moderately high damage when touched.</td>
-        <td>For safety, don't touch once dropped.</td>
-        <td>
-          <img src="pb1.gif" class="weapon-img" width="140" height="80">
-          <img src="pb2.gif" class="weapon-img" width="140" height="80">
-        </td>
+        <td>Deals damage when touched by enemy (or you).</td>
+        <td>Don't touch once dropped.</td>
+        <td><img src="pb1.gif" width="140" height="80"></td>
         <td>Descent 1 & 2</td>
-        <td>Counter/Sec.</td>
-        <td>10 bombs</td>
+        <td>Secondary/Countermeasure</td>
+        <td>10</td>
       </tr>
       <tr>
         <td><strong>Smart Mine</strong></td>
-        <td>Explodes with homing bomblets when touched.</td>
-        <td>For safety, don't touch once dropped.</td>
-        <td>
-          <img src="sm1.gif" class="weapon-img" width="140" height="80">
-          <img src="sm2.gif" class="weapon-img" width="140" height="80">
-        </td>
+        <td>Explodes with homing bomblets.</td>
+        <td>Don't touch once dropped.</td>
+        <td><img src="sm1.gif" width="140" height="80"></td>
         <td>Descent 2</td>
-        <td>Counter/Sec.</td>
-        <td>10 mines</td>
+        <td>Secondary/Countermeasure</td>
+        <td>10</td>
       </tr>
       <tr>
         <td><strong>Proximity Mine</strong></td>
-        <td>Proximity bomb with a bigger explosion and more damage.</td>
+        <td>Bigger explosion and more damage than proximity bomb.</td>
         <td>You can take more damage if you touch it.</td>
-        <td>Basically looks like a proximity bomb.</td>
+        <td>No Image</td>
         <td>Descent 3</td>
         <td>Countermeasure</td>
         <td>Unknown</td>
       </tr>
       <tr>
         <td><strong>Seeker Mine</strong></td>
-        <td>Like a proximity mine, but slowly moves toward enemies.</td>
-        <td>You guessed it, don't touch.</td>
-        <td>Looks like a smart mine.</td>
+        <td>Slowly moves toward enemies.</td>
+        <td>Don't touch.</td>
+        <td>No Image</td>
         <td>Descent 3</td>
         <td>Countermeasure</td>
         <td>Unknown</td>
       </tr>
       <tr>
         <td><strong>Bouncing Betty</strong></td>
-        <td>Mine that bounces off walls all over the area.</td>
+        <td>Bounces off walls all over the area.</td>
         <td>Don't get in its way.</td>
         <td>No Image</td>
         <td>Descent 3</td>
@@ -450,8 +394,8 @@ tr:hover {
       </tr>
       <tr>
         <td><strong>Gunboy</strong></td>
-        <td>Functions as a small laser turret shooting in all directions.</td>
-        <td>Don't completely rely on it; enemies can shoot it down quickly.</td>
+        <td>Functions as a small laser turret.</td>
+        <td>Enemies can shoot these down.</td>
         <td>No Image</td>
         <td>Descent 3</td>
         <td>Countermeasure</td>
@@ -460,7 +404,7 @@ tr:hover {
       <tr>
         <td><strong>Chaff</strong></td>
         <td>Confuses and distracts homing missiles.</td>
-        <td>Not actually a weapon! Be careful not to bump into it. Hard to destroy.</td>
+        <td>Not actually a weapon. Don't bump into it.</td>
         <td>No Image</td>
         <td>Descent 3</td>
         <td>Countermeasure</td>
@@ -470,6 +414,7 @@ tr:hover {
   </table>
 </div>
 
-<a href="https://bluashgamr.github.io/thePTMCnerd" class="back-link">Back to Home</a>
+<a href="index.html" class="back-link">Back to Home</a>
+
 </body>
 </html>

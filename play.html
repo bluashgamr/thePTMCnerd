@@ -61,11 +61,26 @@ td {
   font-size: 1rem;
   line-height: 1.5;
   vertical-align: top;
-  word-break: break-all; /* Ensures long URLs don't break the layout */
+  /* THE FIX: Ensures whole words stay together and don't split like "doo-r" */
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 tr:hover {
   background-color: #f8fdff;
+}
+
+.game-header {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  color: #800080;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+a {
+  color: #00008B;
+  text-decoration: underline;
 }
 
 .back-link {
@@ -76,18 +91,6 @@ tr:hover {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
-}
-
-.game-header {
-  background-color: #f0f0f0;
-  font-weight: bold;
-  color: #800080;
-  text-align: center;
-}
-
-a {
-  color: #00008B;
-  text-decoration: underline;
 }
 </style>
 </head>
@@ -135,7 +138,7 @@ a {
         <td><strong>D1X-XL</strong></td>
         <td>Ridiculously good graphics. Comes with high res graphics and advanced option and extra movies.</td>
         <td>Fairly more complicated than gog and you need Descent 2 as well because they go together.</td>
-        <td><a href="http://descent2.de">http://descent2.de</a> (see descent 1)</td>
+        <td><a href="http://descent2.de">http://descent2.de (see descent 1)</a></td>
         <td>$14 because you get the game data from gog</td>
       </tr>
       <tr>
@@ -148,7 +151,7 @@ a {
       <tr>
         <td><strong>The Shady Way</strong></td>
         <td>Get it on a shady internet site.</td>
-        <td>Risk of virus + risk of FBI at your door.</td>
+        <td>Risk of virus+risk of FBI at you door.</td>
         <td>REDACTED</td>
         <td>?</td>
       </tr>
@@ -192,7 +195,7 @@ a {
       <tr>
         <td><strong>The Shady Way</strong></td>
         <td>Get it on a shady internet site.</td>
-        <td>Risk of virus + risk of FBI at your door.</td>
+        <td>Risk of virus+risk of FBI at you door.</td>
         <td>REDACTED</td>
         <td>?</td>
       </tr>
@@ -222,7 +225,7 @@ a {
       <tr>
         <td><strong>The Shady Way</strong></td>
         <td>Get it on a shady internet site.</td>
-        <td>Risk of virus + risk of FBI at your door.</td>
+        <td>Risk of virus+risk of FBI at you door.</td>
         <td>REDACTED</td>
         <td>?</td>
       </tr>
